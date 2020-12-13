@@ -1,0 +1,24 @@
+body{padding: 50px;}
+.graph{height: 40px; background-color: #ccc; border-radius: 40px; margin-bottom: 10px;}
+.graph span {display: block; height: 40px; padding:0 15px; box-sizing: border-box; line-height: 40px; text-align: right; border-radius: 40px;
+color: #fff; }
+.graph.stack1 span{animation: stack1 2s 1; background-color: wheat;}
+.graph.stack2 span{animation: stack2 2s 1; background-color: yellowgreen;}
+.graph.stack3 span{animation: stack3 2s 1; background-color: teal;}
+
+
+@keyframes stack1 {
+    0%{ width: 0; color: rgba(255,255,255,0);}
+    40%{color:rgba(255,255,255,1) }
+    100%{width: 75%; }
+}
+@keyframes stack2 {
+    0%{ width: 0; color: rgba(255,255,255,0);}
+    40%{color:rgba(255,255,255,1) }
+    100%{width: 60%; }
+}
+@keyframes stack3 {
+    0%{ width: 0; color: rgba(255,255,255,0);}
+    40%{color:rgba(255,255,255,1) }
+    100%{width: 25%; }
+}

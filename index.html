@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>CSS 막대그래프</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="graph stack1">
+      <span class="percent">75%</span>
+    </div>
+    <div class="graph stack2">
+      <span class="percent">60%</span>
+    </div>
+    <div class="graph stack3">
+      <span class="percent">25%</span>
+    </div>
+    <script>
+      let percent = document.getElementsByClassName('percent');
+      for (let i = 0; i < percent.length; i++) {
+        let perce = percent[i];
+        perce.style.width = perce.innerHTML;
+      }
+    </script>
+  </body>
+</html>
